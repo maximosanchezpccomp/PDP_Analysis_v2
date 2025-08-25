@@ -1,12 +1,3 @@
-diff --git a/requirements.txt b/requirements.txt
---- a/requirements.txt
-+++ b/requirements.txt
-@@ -1,26 +1,65 @@
--# Core
--streamlit==1.34.0
--pandas==2.2.2
--requests==2.32.3
--beautifulsoup4==4.12.3
 +# ============================================
 +# Core Dependencies
 +# ============================================
@@ -16,10 +7,6 @@ diff --git a/requirements.txt b/requirements.txt
 +requests>=2.31.0,<3.0.0
 +beautifulsoup4>=4.12.0,<5.0.0
  
--# Visualización
--plotly==5.22.0
--wordcloud==1.9.3
--# Pillow is a dependency of wordcloud; avoid pinning to allow Py3.13-compatible wheels
 +# ============================================
 +# Data Visualization
 +# ============================================
@@ -28,8 +15,6 @@ diff --git a/requirements.txt b/requirements.txt
 +matplotlib>=3.7.0,<4.0.0  # Required by wordcloud
 +Pillow>=10.0.0  # Image processing for wordcloud
  
--# Matching / texto
--rapidfuzz==3.9.0
 +# ============================================
 +# Text Processing & Matching
 +# ============================================
@@ -37,22 +22,13 @@ diff --git a/requirements.txt b/requirements.txt
 +python-Levenshtein>=0.20.0  # C extension for faster fuzzy matching
 +unicodedata2>=15.0.0  # Better unicode normalization
  
--# Precio e i18n
--price-parser==0.3.4
--Babel==2.15.0
 +# ============================================
 +# Price Parsing & Internationalization
 +# ============================================
 +price-parser>=0.3.4
 +Babel>=2.14.0
 +python-dateutil>=2.8.0
- 
--# Optional structured data / parsing (commented out to avoid lxml build issues)
--# extruct==0.17.0
--# w3lib==2.2.1
--# rdflib==6.3.2
--# html5lib==1.1
--# lxml (requires system libraries; intentionally omitted)
+
 +# ============================================
 +# Structured Data Extraction (CRITICAL)
 +# ============================================
